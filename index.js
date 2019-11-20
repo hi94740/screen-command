@@ -1,0 +1,1 @@
+console.log("Please install and run this package in global mode, try: \nnpm i -global screen-command\nthen use command 【sc】")
