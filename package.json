@@ -1,0 +1,24 @@
+{
+  "name": "screen-command",
+  "version": "1.0.0",
+  "description": "A simple utility wraps screen command to make it handier to switch between screens. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi94740/screen-command.git"
+  },
+  "keywords": [
+    "shell",
+    "screen",
+    "cli"
+  ],
+  "author": "hi94740",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hi94740/screen-command/issues"
+  },
+  "homepage": "https://github.com/hi94740/screen-command#readme"
+}
