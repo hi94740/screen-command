@@ -16,7 +16,7 @@ function saveCommand(c) {
 }
 
 
-term.terminal.blue("\nThere are ").green((ls.length - 1) + "").blue(" running screens: ")
+term.terminal.blue("\nThere are ").green((ls.length - 1) + "").blue(ls.length > 2 ? " running screens: ":" running screen: ")
 term.terminal.singleColumnMenu(ls,{cancelable:true}).promise.then(result => {
   if (result.canceled) {
     saveCommand("")
