@@ -4,13 +4,17 @@ Let you choose screen session to attach to just by using arrow keys to select fr
 
 ## Install
 
-`$ npm i -g screen-command`
+```bash
+$ npm i -g screen-command
+```
 
 ## Usage
 
 Just use the following command: 
 
-`$ sc`
+```bash
+$ sc
+```
 
 and then use arrow keys to navigate up and down, press enter to select a screen. 
 
