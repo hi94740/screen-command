@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const term = require('terminal-kit')
 const shell = require('shelljs')
 const fs = require('fs')
@@ -5,8 +7,7 @@ const fs = require('fs')
 const exit = _ => term.terminal.processExit()
 
 const ls = shell.exec("screen -ls",{silent:true}).split("\n").map(l => l.trim())
-ls.pop()
-ls.pop()
+while(!(ls.pop().split(" ")[1] + "").startsWith("Socket")) {}
 ls.shift()
 ls.unshift("+ Start a new screen...")
 
@@ -15,7 +16,7 @@ function saveCommand(c) {
 }
 
 
-term.terminal.blue("\nThere are ").green(ls.length - 1).blue(" running screens: ")
+term.terminal.blue("\nThere are ").green((ls.length - 1) + "").blue(" running screens: ")
 term.terminal.singleColumnMenu(ls,{cancelable:true}).promise.then(result => {
   if (result.canceled) {
     saveCommand("")

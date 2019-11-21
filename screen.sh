@@ -1,4 +1,3 @@
 #!/bin/bash
-path=$(dirname $(readlink -f $0))
-node ${path}'/screen.js'
+screen-command-helper-bin-please_do_not_run_this_directly
 /tmp/screen-command.sh

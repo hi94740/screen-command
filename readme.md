@@ -1,6 +1,6 @@
 # screen-command
 
-Let you choose screen session to attach to by using arrow keys to select from a list in terminal. 
+Let you choose screen session to attach to just by using arrow keys to select from a list in terminal. 
 
 ## Install
 
@@ -12,17 +12,20 @@ Just use the following command:
 
 `$ sc`
 
-and then use arrow keys to navigate up and down, hit enter to select a screen. 
+and then use arrow keys to navigate up and down, press enter to select a screen. 
 
-You can also choose "+ Start a new screen..." and enter a name to start a named screen, or just hit enter again to start an unnamed screen. 
+You can also choose "+ Start a new screen..." and enter a name to start a named screen, or just press enter again to start an unnamed screen. 
 
 ## Compatibility
 
-Currently **only** supports **Linux**.
+This package **should** works on both **macOS** and **Linux** with the latest version of Screen installed. 
 
-**Only** tested on Raspbian.
+Below are the tested combination of OS and Screen version: 
 
-Intended to add support for MacOS.
+| OS                    | Screen Version |
+| --------------------- | -------------- |
+| macOS 10.15           | 4.00.03        |
+| Raspbian GNU/Linux 10 | 4.06.02        |
 
 ## Note
 
