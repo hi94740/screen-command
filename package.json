@@ -1,7 +1,7 @@
 {
   "name": "screen-command",
   "version": "1.1.1",
-  "description": "Simple CLI utility written in Node.js that wraps screen command to make it easier to choose which screen to attach to. ",
+  "description": "Simple terminal utility written in Node.js that wraps screen command to make it easier to choose which screen to attach to. ",
   "main": "index.js",
   "bin": {
     "sc": "screen.sh",
@@ -18,7 +18,7 @@
   "keywords": [
     "shell",
     "screen",
-    "cli"
+    "terminal"
   ],
   "author": "hi94740",
   "license": "MIT",
