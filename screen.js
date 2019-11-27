@@ -13,6 +13,7 @@ ls.unshift("+ Start a new screen...")
 
 function saveCommand(c) {
   fs.writeFileSync("/tmp/screen-command.sh",c,{mode:0777})
+  exit()
 }
 
 
@@ -20,7 +21,6 @@ term.terminal.blue("\nThere are ").green((ls.length - 1) + "").blue(ls.length > 
 term.terminal.singleColumnMenu(ls,{cancelable:true}).promise.then(result => {
   if (result.canceled) {
     saveCommand("")
-    exit()
   } else {
     result = result.selectedText
     if (result == "+ Start a new screen...") {
@@ -37,14 +37,12 @@ term.terminal.singleColumnMenu(ls,{cancelable:true}).promise.then(result => {
             saveCommand("screen -S " + result)
           }
         }
-        exit()
-      })
+      }).catch(console.error)
     } else {
       result = result.split("\t")[0]
       term.terminal("\n[attaching to " + result + "]\n")
       let command = "screen -A -r -x " + result
       saveCommand(command)
-      exit()
     }
   }
-})
+}).catch(console.error)
