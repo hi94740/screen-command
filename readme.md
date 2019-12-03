@@ -22,7 +22,7 @@ You can also choose "+ Start a new screen..." and enter a name to start a named 
 
 ## Compatibility
 
-This package **should** works on both **macOS** and **Linux** with the latest version of Screen installed. 
+This package **should** work on both **macOS** and **Linux** with the latest version of Screen installed. 
 
 Below are the tested combination of OS and Screen version: 
 
