@@ -1,6 +1,6 @@
 # screen-command
 
-Let you choose screen session to attach to just by using arrow keys to select from a list in terminal. 
+Let you choose screen session to attach to just by using arrow keys to select or search from a list in terminal. 
 
 ## Install
 
@@ -24,7 +24,7 @@ and then:
 
 * press **enter** to select a screen
 
-You can also choose "+ Start a new screen..." and enter a name to start a named screen, or just press enter again to start an unnamed screen. 
+You can also choose " + Start a new screen..." and enter a name to start a named screen, or just press enter again to start an unnamed screen. 
 
 ## Compatibility
 
